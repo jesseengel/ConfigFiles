@@ -1,0 +1,16 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	deleted:    Band Diagrams/datathief2gd.m
+#	deleted:    Band Diagrams/mband_3C_SiC.gif
+#	modified:   CrystalGamelanIIR/CrystalGamelanIIR.m
+#	renamed:    STK/STKInstructionsFromJulian -> STK/notes from Julius Smith.txt
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	CrystalGamelanIIR/gd2iir.m
