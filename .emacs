@@ -20,6 +20,14 @@
 (load-library "jesse-autopair")
 
 
+;; Evil (VIM) Mode
+(require 'evil)
+(evil-mode t)
+
+
+
+
+
 ;;Latex Mode
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (autoload 'latex-mode "jesse-latex")
@@ -36,11 +44,8 @@
 ;(autoload 'faust-mode "faust-mode" "FAUST editing mode." t)
 
 
-;; Evil (VIM) Mode
-;(require 'evil)
-;(evil-mode 1)
-
 ;;Matlab Mode
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (autoload 'matlab-mode "matlab" "Matlab Editing Mode" t)
 (add-to-list
   'auto-mode-alist
