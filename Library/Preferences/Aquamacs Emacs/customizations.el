@@ -43,21 +43,18 @@
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
  '(aquamacs-additional-fontsets nil t)
+ '(aquamacs-autoface-mode nil)
  '(aquamacs-customization-version-id 216 t)
  '(aquamacs-tool-bar-user-customization (quote ((4194506 nil nil) (16777249 nil nil))) t)
  '(default-frame-alist (quote ((cursor-type . box) (vertical-scroll-bars . right) (internal-border-width . 0) (modeline . t) (fringe) (color-theme-name . color-theme-almost-monokai) (mouse-color . "black") (background-mode . dark) (menu-bar-lines . 1) (right-fringe . 18) (left-fringe . 9) (cursor-color . "#DAD085") (background-color . "#272821") (foreground-color . "#ffffff") (font . "-apple-Menlo-medium-normal-normal-*-15-*-*-*-m-0-iso10646-1") (fontsize . 0) (font-backend ns) (tool-bar-lines . 1))))
  '(global-linum-mode t)
  '(ns-tool-bar-display-mode (quote labels) t)
  '(ns-tool-bar-size-mode (quote regular) t)
+ '(tabbar-mode nil nil (tabbar))
  '(visual-line-mode nil t))
 (custom-set-faces
   ;; custom-set-faces was added by Custom.
   ;; If you edit it by hand, you could mess it up, so be careful.
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
- '(autoface-default ((t (:inherit default))))
- '(completion-list-mode-default ((t (:inherit autoface-default))) t)
- '(emacs-lisp-mode-default ((t (:inherit autoface-default))) t)
- '(help-mode-default ((t (:inherit autoface-default))) t)
- '(matlab-mode-default ((t (:inherit autoface-default :foreground "#ffffff" :height 150 :family "Menlo"))) t)
- '(sh-mode-default ((t (:inherit default :foreground "#ffffff" :height 150 :family "Menlo"))) t))
+ )
