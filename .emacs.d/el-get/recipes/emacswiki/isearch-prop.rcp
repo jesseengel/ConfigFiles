@@ -1,0 +1,5 @@
+(:name isearch-prop
+:auto-generated t
+:type emacswiki
+:description "Search character-property contexts."
+:website "https://raw.github.com/emacsmirror/emacswiki.org/master/isearch-prop.el")
