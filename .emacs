@@ -7,7 +7,8 @@
 ;; Divert autosaves
 (setq backup-directory-alist `(("." . "~/.emacs.d/.saves")))
 
-
+;;Color theme
+;;(load-theme 'tango t)
 
 
 ;;Package Managers (package.el)
@@ -53,8 +54,35 @@
 
 ;; Evil (VIM) Mode
 (require 'evil)
-;(evil-mode t)
 (setq evil-want-fine-undo t)
+;(evil-mode t)
+
+;;Cursor type
+(setq cursor-type 'box)
+(setq global-hl-line-mode t)
+(setq x-stretch-cursor t)
+
+
+;;Autocomplete Mode
+(require 'auto-complete)
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/auto-complete-1.3.1/dict")
+(require 'auto-complete-config)
+(ac-config-default)
+
+;;Speedbar
+(require 'sr-speedbar)
+;(sr-speedbar-open)
+
+
+;;Global Keymaps
+(global-unset-key (kbd "M-,"))
+(global-set-key (kbd "M-.") 'comment-region-or-line)
+(global-set-key (kbd "M-,") 'uncomment-region-or-line)
+
+(global-unset-key (kbd "C-z"))
+(global-set-key (kbd "C-z") 'sr-speedbar-toggle)
+
+
 
 
 
@@ -75,19 +103,11 @@
 
 ;;Faust.el Code
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;(setq auto-mode-alist (cons '("\\.dsp$" . faust-mode) auto-mode-alist))
-;(autoload 'faust-mode "faust-mode" "FAUST editing mode." t)
+(setq auto-mode-alist (cons '("\\.dsp$" . faust-mode) auto-mode-alist))
+(autoload 'faust-mode "faust-mode" "FAUST editing mode." t)
 
 
 ;;Matlab Mode
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(autoload 'matlab-mode "matlab" "Matlab Editing Mode" t)
-(add-to-list
-  'auto-mode-alist
-  '("\\.m$" . matlab-mode))
-(setq matlab-indent-function t)
-(setq matlab-shell-command "matlab")
+(autoload 'matlab-mode "jesse-matlab" "" t)
 
-(defun my-matlab-shell-mode-hook ()
-  (global-set-key "C-c" 'interrupt-process))
-(setq matlab-shell-hook 'my-matlab-shell-hook)

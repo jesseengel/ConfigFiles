@@ -11,6 +11,8 @@ alias scsynth='/Applications/SuperCollider/SuperCollider.app/Contents/Resources/
 alias sclang='/Applications/SuperCollider/SuperCollider.app/Contents/Resources/sclang'
 
 
+
+
 #Not Sure what this is for
 MKL_NUM_THREADS=1
 export MKL_NUM_THREADS
@@ -18,18 +20,18 @@ export MKL_NUM_THREADS
 
 ##Paths
 
-## PYTHON
-# Setting PATH for EPD-7.3-2
-# The orginal version is saved in .bash_profile.pysave
-export PATH="/Library/Frameworks/Python.framework/Versions/Current/bin:${PATH}"
-
 ## MATLAB
 export PATH="/Applications/MATLAB_R2011b.app/bin:$PATH"
 
-
-
 # MacPorts Installer addition on 2013-06-17_at_01:54:20: adding an appropriate PATH variable for use with MacPorts.
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-# Finished adapting your PATH environment variable for use with MacPorts.
 
 
+## PYTHON
+# Setting PATH for EPD-7.3-2
+# The orginal version is saved in .bash_profile.pysave
+#export PATH="/Library/Frameworks/Python.framework/Versions/Current/bin:${PATH}"
+
+
+# added by Anaconda 1.7.0 installer
+export PATH="/Users/jengel/anaconda/bin:$PATH"

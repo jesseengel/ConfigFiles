@@ -33,10 +33,10 @@
 
 ;;Jedi Autocomplete
 
-(setq jedi:setup-keys t)                      ; optional
-(setq jedi:complete-on-dot t)                 ; optional
-(add-hook 'python-mode-hook 'jedi:setup)
-(require 'jedi)
+;(setq jedi:setup-keys t)                      ; optional
+;(setq jedi:complete-on-dot t)                 ; optional
+;(add-hook 'python-mode-hook 'jedi:setup)
+;(require 'jedi)
 ;(autoload 'jedi:setup "jedi" nil t)
 
 
